@@ -1,0 +1,10 @@
+aaa authentication ppp test local       创建ppp认证本地数据库                                
+username 1702 password 0 digitalchina   创建认证用户信息
+
+interface Serial1/0                                                     
+ ip address 192.168.1.1 255.255.255.0                                   
+ no ip directed-broadcast                                               
+ encapsulation ppp                                                      
+ ppp authentication chap test   加入test指针                                        
+ ppp chap hostname 1751                                                 
+ physical-layer speed 64000
